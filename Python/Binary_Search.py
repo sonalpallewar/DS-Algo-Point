@@ -34,7 +34,7 @@ def binary(arr,low,high,x):
             high = mid - 1
     return -1
 
-print('Enter a list of number')
+print('Enter a count of number in a list or array')
 arr = list(map(int,input().split()))
 n=len(arr)
 
