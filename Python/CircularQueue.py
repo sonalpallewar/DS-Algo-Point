@@ -1,13 +1,29 @@
+class circulaQueue:
+    print("This method is created to just check the addition of new class in pr metadata")
 class Queue:
+    
     def __init__(self,ms):
         self.myqueue=[]
         self.maxsize=ms
         self.front=0
         self.rear=0
+    def reQueue(self):
+        
+        if len(self.myqueue)==self.maxsize:
+            print("Queue is full . no new element can be added")
+        elif len(self.front)==self.front=0:
+            print("Front row is empty")
+        else:
+            data=int(input("Enter data to enqueue  "))
+            self.myqueue.append(data)
+            self.rear=(self.rear+1)%self.maxsize
+            print("Data added to queue")
     def EnQueue(self):
         
         if len(self.myqueue)==self.maxsize:
             print("Queue is full . no new element can be added")
+        elif len(self.front)==self.front=0:
+            print("Front row is empty")
         else:
             data=int(input("Enter data to enqueue  "))
             self.myqueue.append(data)
