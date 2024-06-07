@@ -18,7 +18,7 @@ class Queue:
         
         if len(self.myqueue)==self.maxsize:
             print("Queue is full . no new element can be added")
-        elif len(self.front)==self.front=0:
+        elif len(self.front)==self.front:
             print("Front row is empty")
         else:
             data=int(input("Enter data to enqueue  "))
