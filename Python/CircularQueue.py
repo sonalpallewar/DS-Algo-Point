@@ -1,5 +1,11 @@
-class CirculaQueue:
-    print("This method is created to just check the addition of new class in pr metadata")
+class CircularQueue:
+    def __init__(self,ms):
+        self.myqueue=[]
+        self.maxsize=ms
+        self.front=0
+        self.rear=0
+        print("Ek taraf se aloo daalo dusri taraf se sona niklega")
+    
     
 class Queue:
     
