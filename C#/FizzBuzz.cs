@@ -45,3 +45,10 @@ public class Program
 		}
 	}
 }
+public class SubProgram
+{
+    public static void Main()
+    {
+        Console.WriteLine("Great FizzBuzz");
+    }
+}

@@ -1,55 +1,30 @@
 using System;
-using System.Linq;
 
-/*
- ** Sample I/O
- **
- ** INPUT: 
- ** 
- ** Two words in each line to compare if they are anagrams.
- **
- ** Example Input: 
- ** CAT
- ** TAC
- **
- ** OUTPUT:
- **
- ** If the strings are anagrams, "The strings are anagrams" is the printed output. Otherwise,
- ** if they are not anagrams, "The strings are not anagrams" is the printed output.
- **
- ** Example Output for previous example input:
- ** The strings are anagrams
- **
- ** Time complexity - O(n)
- **
- ** Space complexity - O(n)
- **
- */					
-public class Program
+class AdditionProgram
 {
-	private static bool AreAnagrams(string firstString, string secondString)
-	{
-		var firstStringChars = firstString.ToLower().ToList();
-		var secondStringChars = secondString.ToLower().ToList();
-		firstStringChars.Sort();
-		secondStringChars.Sort();
-		return firstStringChars.SequenceEqual(secondStringChars);
-	}
-	
-	public static void Main()
-	{
-		Console.Write("Enter the first word: ");
-		var firstString = Console.ReadLine();
-		Console.Write("Enter the second word: ");
-		var secondString = Console.ReadLine();
-		var result = AreAnagrams(firstString, secondString);
-		if(result)
-		{
-			Console.WriteLine("The strings are anagrams");
-		}
-		else
-		{
-			Console.WriteLine("The strings are not anagrams");
-		}
-	}
+    static void Main()
+    {
+        // Prompt the user to enter the first number
+        Console.Write("Enter the first number: ");
+        string input1 = Console.ReadLine();
+
+        // Prompt the user to enter the second number
+        Console.Write("Enter the second number: ");
+        string input2 = Console.ReadLine();
+
+        // Parse the input strings to integers
+        if (int.TryParse(input1, out int number1) && int.TryParse(input2, out int number2))
+        {
+            // Perform the addition
+            int sum = number1 + number2;
+
+            // Display the result
+            Console.WriteLine($"The sum of {number1} and {number2} is: {sum}");
+        }
+        else
+        {
+            // Display an error message if inputs are not valid integers
+            Console.WriteLine("Invalid input. Please enter valid integers.");
+        }
+    }
 }

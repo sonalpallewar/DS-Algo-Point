@@ -28,29 +28,4 @@ using System;
  ** Space complexity - O(n)
  **
  */					
-public class Program
-{
-	private static bool PythagoreanTriplet(int firstNumber, int secondNumber, int thirdNumber)
-	{
-		return (firstNumber^2 + secondNumber^2) == (thirdNumber^2);
-	}
-	
-	public static void Main()
-	{
-		Console.Write("Enter the number of the first triangle's leg: ");
-		var firstNumber = int.Parse(Console.ReadLine());
-		Console.Write("Enter the number of the second triangle's leg: ");
-		var secondNumber = int.Parse(Console.ReadLine());
-		Console.Write("Enter the number of the hypotenuse: ");
-		var thirdNumber = int.Parse(Console.ReadLine());
-		var result = PythagoreanTriplet(firstNumber, secondNumber, thirdNumber);
-		if(result)
-		{
-			Console.WriteLine("These numbers are a Pythagorean triplet");
-		}
-		else
-		{
-			Console.WriteLine("These numbers are not a Pythagorean triplet");
-		}
-	}
-}
+
