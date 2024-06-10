@@ -15,7 +15,7 @@ public class BubbleSort {
 
         for (int i = 0; i < n; i++) // input array elements
             a[i] = in.nextInt();
-    System.out.println("Updating class method");
+        System.out.println("Updating class method");
         // Sorting the array using bubble sort
         bubbleSort(a);
 
