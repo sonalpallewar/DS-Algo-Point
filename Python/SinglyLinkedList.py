@@ -1,7 +1,3 @@
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
 
 class SinglyLinkedList:
     def __init__(self):
@@ -33,9 +29,6 @@ class SinglyLinkedList:
             tmp.next = self.pos.next
             del self.pos
             self.pos = tmp
-
-    def reset(self):
-        self.pos = self.head
 
     def advance(self):
         if self.pos != None:
