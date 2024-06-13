@@ -6,6 +6,9 @@
 # You have to perform m operations. During the i-th operation, you choose two indices c and d such that li≤c,d≤ri, and swap ac and ad.
 # Calculate the number of indices k such that it is possible to choose the operations so that ak=1 in the end.
 
+def intersect(s1, s2):
+    return s2[0] <= s1[0] <= s2[1] or s2[0] <= s1[1] <= s2[1]
+ 
 def solve():
     n, x, m = map(int, input().split())
     l = x
