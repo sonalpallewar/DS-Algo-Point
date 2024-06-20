@@ -55,7 +55,12 @@ class interpolationsearch {
     }
 }
   
-  
+class ArrayUtils{
+    public static void main(String args[])
+    {
+        System.out.println("Hello Array Utils");
+    }
+}
   
   /*
   arr ={10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 

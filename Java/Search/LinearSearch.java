@@ -5,10 +5,11 @@ class LinearSearch{
 
     /* Iterate through each elements and compare it with item to get the element postion break out if found */
 
-    private static int search(int[] a,int item)
+    private static int search(int[] a,int value)
     {
         for (int i=0;i<a.length;i++ ) {
-            if(a[i]==item){
+            if(a[i]==value){
+                System.out.println("Value Found at index "+i);
                 return i;
             }
         }
