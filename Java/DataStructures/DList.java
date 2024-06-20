@@ -1,26 +1,5 @@
 package Java.DataStructures;
 
-class DListNode{
-
-    public int item;
-    public DListNode prev;
-    public DListNode next;
-
-    DListNode() {
-        item = 0;
-        prev = null;
-        next = null;
-    }
-
-    DListNode(int i) {
-        item = i;
-        prev = null;
-        next = null;
-    }
-
-}
-
-
 public class DList {
 
     protected DListNode head;

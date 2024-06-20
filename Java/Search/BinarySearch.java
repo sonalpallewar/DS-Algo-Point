@@ -7,7 +7,12 @@ Contributed by @jhoserpacheco : https://github.com/jhoserpacheco
 */
 
 public class BinarySearch(){
-
+	public void printArray(int arr[]){
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+	}
     public int binary_search(int array[], int x){
     	int l = 0, r = array.length - 1;
     	while (l <= r) {
@@ -18,7 +23,8 @@ public class BinarySearch(){
     	}
     	return -1;
     }
-
+int arr[]={1,2,3,4,5};
+printArray(arr);
 
 }
 

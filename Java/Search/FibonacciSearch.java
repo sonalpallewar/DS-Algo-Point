@@ -43,47 +43,7 @@ public class FibonacciSearch {
 
 
 	// fibonacciSearch() function for Fibonacci Search Logic
-	public static int fibonacciSearch(int[] array, int search){
-		// STEP-1 - Initialize the fibonacci numbers
-		int fib_NMinus2 = 0;	// (n-2)th Fibonacci Number
-		int fib_NMinus1 = 1;	// (n-1)th Fibonacci Number
-		int fib_N = fib_NMinus2 + fib_NMinus1;	// (n)th Fibonacci Number
-		
-		// STEP-2 - fib_N is going to store the smallest fibonacci number greater than or equal to n
-		// Here we used the concept of Swapping of numbers without using the temp variable
-		while(fib_N < array.length)
-		{
-			fib_NMinus2 = fib_NMinus1;
-			fib_NMinus1 = fib_N;
-			fib_N = fib_NMinus2 + fib_NMinus1;
-		}
-		
-		// STEP-3 - Variable to eliminate the range of variables from the front of the array
-		int offset = -1;
 
-		// STEP-4 - 
-		while(fib_N > 1){
-			int i = minimum(offset + fib_NMinus2, array.length-1);
-			
-			if(array[i-1] < search){
-				fib_N = fib_NMinus1;
-				fib_NMinus1 = fib_NMinus2;
-				fib_NMinus2 = fib_N - fib_NMinus1;
-				offset = i;
-			} else if (array[i-1] > search) {
-				fib_N = fib_NMinus2;
-				fib_NMinus1 = fib_NMinus1 - fib_NMinus2;
-				fib_NMinus2 = fib_N - fib_NMinus1;
-			} else {
-				return i;	// Element found, so return the index of that element
-			}
-		}
-		
-		if (fib_NMinus1 == 1 && array[offset] == search){
-			return offset+1;
-		}
-		return -1;
-	}
 
 	// Utility function to find the minimum of two elements
 	public static int minimum(int x, int y){
