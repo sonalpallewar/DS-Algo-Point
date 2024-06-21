@@ -1,6 +1,8 @@
 class Node: 
+    print("Updating class method")
     def __init__(self,key): 
         self.left = None
+        self.last=None
         self.right = None
         self.val = key 
         

@@ -1,13 +1,7 @@
 # Python program for implementation of CombSort 
   
 # To find next gap from current 
-def getNextGap(gap): 
-  
-    # Shrink gap by Shrink factor 
-    gap = (gap * 10)/13
-    if gap < 1: 
-        return 1
-    return gap 
+
   
 # Function to sort arr[] using Comb Sort 
 def combSort(arr): 

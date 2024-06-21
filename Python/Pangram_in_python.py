@@ -3,7 +3,7 @@
 import string  //Using the string on your sample code
   
 def ispangram(str): 
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    alphabet = "abcdefghi"
     
     for char in alphabet: 
         if char not in str.lower(): 
