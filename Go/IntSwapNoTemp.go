@@ -23,6 +23,12 @@ func swapInt(x *int, y *int){
 	*x = *x - *y //x = x + y - x = y
 }
 
+func swapIntNew(x *int, y *int){
+	fmt.Println("Swapping x and y...")
+	*x = *x + *y //x = x + y
+	*y = *x - *y //y = x + y - y = x
+	*x = *x - *y //x = x + y - x = y
+}
 
 //A function that does the same thing but with the xor function.
 func swapIntXor(x *int, y *int){

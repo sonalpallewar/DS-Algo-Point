@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"random"
 )
 
 //Function to swap values at two positions in a slice
