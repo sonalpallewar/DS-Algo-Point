@@ -12,6 +12,13 @@ func swap(arr []int, i int, j int){
 	arr[j]=t
 }
 
+//Function to swap values at two positions in a slice
+func swapint(arr []int, i int, j int){
+	t:=arr[i]
+	arr[i]=arr[j]
+	arr[j]=t
+}
+
 //Sorts elements in the slice as per criteria
 func dutchFlag (arr []int){
 	low, mid := 0, 0

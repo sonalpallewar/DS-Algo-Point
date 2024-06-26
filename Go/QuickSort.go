@@ -42,6 +42,17 @@ func sort(array []int, start int, end int) []int {
 	return array
 }
 
+func sortdesc(array []int, start int, end int) []int {
+	if start < end {
+		pivotIndex := partition(array, start, end)
+		// Sort the elements on the left of pivot
+		sort(array, start, pivotIndex-1)
+		// Sort the elements on the right of pivot
+		sort(array, pivotIndex+1, end)
+	}
+	return array
+}
+
 func main() {
 	var array []int
 
